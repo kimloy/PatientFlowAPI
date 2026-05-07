@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "8.0.10",
           "PatientFlow.Application": "1.0.0",
+          "PatientFlow.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "10.1.7"
         },
         "runtime": {

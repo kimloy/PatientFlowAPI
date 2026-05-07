@@ -28,6 +28,9 @@
             "projectReferences": {
               "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Application/PatientFlow.Application.csproj": {
                 "projectPath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Application/PatientFlow.Application.csproj"
+              },
+              "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/PatientFlow.Infrastructure.csproj": {
+                "projectPath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/PatientFlow.Infrastructure.csproj"
               }
             }
           }

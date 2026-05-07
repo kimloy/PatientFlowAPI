@@ -3139,6 +3139,7 @@
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.10",
       "PatientFlow.Application >= 1.0.0",
+      "PatientFlow.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 10.1.7"
     ]
   },
@@ -3169,6 +3170,9 @@
           "projectReferences": {
             "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Application/PatientFlow.Application.csproj": {
               "projectPath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Application/PatientFlow.Application.csproj"
+            },
+            "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/PatientFlow.Infrastructure.csproj": {
+              "projectPath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/PatientFlow.Infrastructure.csproj"
             }
           }
         }
