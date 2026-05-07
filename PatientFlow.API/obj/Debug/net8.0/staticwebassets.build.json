@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "XmxTao0+hperF0tREnlvLiqByqgmLs3MKsfFjdCj/CU=",
+  "Source": "PatientFlow.API",
+  "BasePath": "_content/PatientFlow.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

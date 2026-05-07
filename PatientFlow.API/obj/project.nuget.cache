@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "2dKWHmgzuHU=",
+  "success": true,
+  "projectFilePath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.API/PatientFlow.API.csproj",
+  "expectedPackageFiles": [
+    "/Users/kimloy/.nuget/packages/dapper/2.1.72/dapper.2.1.72.nupkg.sha512",
+    "/Users/kimloy/.nuget/packages/microsoft.aspnetcore.openapi/8.0.10/microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
+    "/Users/kimloy/.nuget/packages/microsoft.extensions.apidescription.server/8.0.0/microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512",
+    "/Users/kimloy/.nuget/packages/microsoft.openapi/2.4.1/microsoft.openapi.2.4.1.nupkg.sha512",
+    "/Users/kimloy/.nuget/packages/swashbuckle.aspnetcore/10.1.7/swashbuckle.aspnetcore.10.1.7.nupkg.sha512",
+    "/Users/kimloy/.nuget/packages/swashbuckle.aspnetcore.swagger/10.1.7/swashbuckle.aspnetcore.swagger.10.1.7.nupkg.sha512",
+    "/Users/kimloy/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.1.7/swashbuckle.aspnetcore.swaggergen.10.1.7.nupkg.sha512",
+    "/Users/kimloy/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.1.7/swashbuckle.aspnetcore.swaggerui.10.1.7.nupkg.sha512",
+    "/Users/kimloy/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

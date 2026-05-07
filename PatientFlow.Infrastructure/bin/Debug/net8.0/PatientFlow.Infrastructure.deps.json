@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PatientFlow.Infrastructure/1.0.0": {
+        "dependencies": {
+          "PatientFlow.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PatientFlow.Infrastructure.dll": {}
+        }
+      },
+      "PatientFlow.Domain/1.0.0": {
+        "runtime": {
+          "PatientFlow.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PatientFlow.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PatientFlow.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

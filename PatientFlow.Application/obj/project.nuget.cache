@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QK30V2d9F/I=",
+  "success": true,
+  "projectFilePath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Application/PatientFlow.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/kimloy/.nuget/packages/dapper/2.1.72/dapper.2.1.72.nupkg.sha512"
+  ],
+  "logs": []
+}

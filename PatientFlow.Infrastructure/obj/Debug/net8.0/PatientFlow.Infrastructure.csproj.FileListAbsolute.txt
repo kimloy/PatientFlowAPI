@@ -1,0 +1,16 @@
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Infrastructure.deps.json
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Infrastructure.dll
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Infrastructure.pdb
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Domain.dll
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Domain.pdb
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.csproj.AssemblyReference.cache
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.AssemblyInfoInputs.cache
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.AssemblyInfo.cs
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.sourcelink.json
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientF.C9A0DA57.Up2Date
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.dll
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/refint/PatientFlow.Infrastructure.dll
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.pdb
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/ref/PatientFlow.Infrastructure.dll

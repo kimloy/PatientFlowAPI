@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/PatientFlow.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Domain/PatientFlow.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Domain/PatientFlow.Domain.csproj",
+        "projectName": "PatientFlow.Domain",
+        "projectPath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Domain/PatientFlow.Domain.csproj",
+        "packagesPath": "/Users/kimloy/.nuget/packages/",
+        "outputPath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kimloy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/PatientFlow.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/PatientFlow.Infrastructure.csproj",
+        "projectName": "PatientFlow.Infrastructure",
+        "projectPath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/PatientFlow.Infrastructure.csproj",
+        "packagesPath": "/Users/kimloy/.nuget/packages/",
+        "outputPath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kimloy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Domain/PatientFlow.Domain.csproj": {
+                "projectPath": "/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Domain/PatientFlow.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.72, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
