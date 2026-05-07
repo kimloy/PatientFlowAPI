@@ -1,0 +1,23 @@
+# PatientFlow API
+
+PatientFlow API is a healthcare workflow API built with .NET 8 and SQL Server.
+
+The project models healthcare workflows using FHIR-inspired resources such as Patients, Encounters, Observations, and Service Requests. It is designed to strengthen backend engineering skills in healthcare interoperability, SQL Server development, and CI/CD automation.
+
+## Tech Stack
+
+- .NET 8 Web API
+- SQL Server
+- EF Core
+- Dapper
+- Docker
+- GitHub Actions
+
+## Planned Features
+
+- Patient management
+- Clinical encounters
+- Observations/vitals
+- Service requests/orders
+- Stored procedures and reporting
+- CI/CD pipelines
