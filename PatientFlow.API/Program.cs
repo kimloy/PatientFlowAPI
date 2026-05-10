@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PatientFlow.Infrastructure.Data;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,11 @@ builder.Services.AddDbContext<PatientFlowDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("PatientFlowDatabase")));
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
 
 var app = builder.Build();
 
