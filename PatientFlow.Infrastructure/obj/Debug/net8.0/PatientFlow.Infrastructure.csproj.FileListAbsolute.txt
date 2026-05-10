@@ -1,4 +1,5 @@
 /Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Infrastructure.deps.json
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Infrastructure.runtimeconfig.json
 /Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Infrastructure.dll
 /Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Infrastructure.pdb
 /Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Domain.dll
@@ -13,6 +14,5 @@
 /Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.dll
 /Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/refint/PatientFlow.Infrastructure.dll
 /Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.pdb
-/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/ref/PatientFlow.Infrastructure.dll
-/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/bin/Debug/net8.0/PatientFlow.Infrastructure.runtimeconfig.json
 /Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/PatientFlow.Infrastructure.genruntimeconfig.cache
+/Users/kimloy/Projects/PatientFlowAPI/PatientFlow.Infrastructure/obj/Debug/net8.0/ref/PatientFlow.Infrastructure.dll

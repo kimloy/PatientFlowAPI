@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PatientFlow.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+649fbb1935322c91114c2a5a75612005dd19270d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8de1ec3d103e6f50032a6ae26cf7242dbb173de")]
 [assembly: System.Reflection.AssemblyProductAttribute("PatientFlow.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PatientFlow.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
