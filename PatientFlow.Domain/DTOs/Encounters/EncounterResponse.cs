@@ -15,7 +15,7 @@ public class EncounterResponse
 
     public EncounterStatus Status { get; set; }
 
-    public string Department { get; set; } = string.Empty;
+    public string? Department { get; set; } = string.Empty;
 
     public DateTime StartTime { get; set; }
 
