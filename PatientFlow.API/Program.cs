@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using PatientFlow.Infrastructure.Data;
 using System.Text.Json.Serialization;
+using PatientFlow.Infrastructure.Data;
+using PatientFlow.Application.Interfaces;
+using PatientFlow.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<PatientFlowDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("PatientFlowDatabase")));
+
+builder.Services.AddScoped<IPatientService, PatientService>();
+builder.Services.AddScoped<IEncounterService, EncounterService>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>

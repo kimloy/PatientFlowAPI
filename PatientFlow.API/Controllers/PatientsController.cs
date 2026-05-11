@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PatientFlow.Domain.Entities;
+using PatientFlow.Application.Interfaces;
 using PatientFlow.Infrastructure.Data;
 using PatientFlow.Domain.DTOs.Patients;
 
@@ -10,31 +11,17 @@ namespace PatientFlow.API.Controllers;
 [Route("api/[controller]")]
 public class PatientsController : ControllerBase
 {
-    private readonly PatientFlowDbContext _context;
+    private readonly IPatientService _patientService;
 
-    public PatientsController(PatientFlowDbContext context)
+    public PatientsController(IPatientService patientService)
     {
-        _context = context;
+        _patientService = patientService;
     }
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<PatientResponse>>> GetPatients()
     {
-        List<PatientResponse> patients = await _context.Patients
-            .Select(patient => new PatientResponse
-            {
-                Id = patient.Id,
-                MedicalRecordNumber = patient.MedicalRecordNumber,
-                FirstName = patient.FirstName,
-                LastName = patient.LastName,
-                DateOfBirth = patient.DateOfBirth,
-                Gender = patient.Gender,
-                PhoneNumber = patient.PhoneNumber,
-                Email = patient.Email,
-                CreatedAt = patient.CreatedAt,
-                UpdatedAt = patient.UpdatedAt
-            })
-            .ToListAsync();
+        var patients = await _patientService.GetPatientsAsync();
 
         return Ok(patients);
     }
@@ -42,61 +29,21 @@ public class PatientsController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<PatientResponse>> GetPatientById(Guid id)
     {
-        Patient? patient = await _context.Patients.FirstOrDefaultAsync(p => p.Id == id);
+        var patient = await _patientService.GetPatientByIdAsync(id);
 
         if (patient == null)
         {
             return NotFound();
         }
 
-        var response = new PatientResponse
-        {
-            Id = patient.Id,
-            MedicalRecordNumber = patient.MedicalRecordNumber,
-            FirstName = patient.FirstName,
-            LastName = patient.LastName,
-            DateOfBirth = patient.DateOfBirth,
-            Gender = patient.Gender,
-            PhoneNumber = patient.PhoneNumber,
-            Email = patient.Email,
-            CreatedAt = patient.CreatedAt,
-            UpdatedAt = patient.UpdatedAt
-        };
-
-        return Ok(response);
+        return Ok(patient);
     }
 
     [HttpPost]
     public async Task<ActionResult<PatientResponse>> CreatePatient(CreatePatientRequest request)
     {
-        var patient = new Patient
-        {
-            MedicalRecordNumber = request.MedicalRecordNumber,
-            FirstName = request.FirstName,
-            LastName = request.LastName,
-            DateOfBirth = request.DateOfBirth,
-            Gender = request.Gender,
-            PhoneNumber = request.PhoneNumber,
-            Email = request.Email
-        };
+        var patient = await _patientService.CreatePatientAsync(request);
 
-        _context.Patients.Add(patient);
-        await _context.SaveChangesAsync();
-
-        var response = new PatientResponse
-        {
-            Id = patient.Id,
-            MedicalRecordNumber = patient.MedicalRecordNumber,
-            FirstName = patient.FirstName,
-            LastName = patient.LastName,
-            DateOfBirth = patient.DateOfBirth,
-            Gender = patient.Gender,
-            PhoneNumber = patient.PhoneNumber,
-            Email = patient.Email,
-            CreatedAt = patient.CreatedAt,
-            UpdatedAt = patient.UpdatedAt
-        };
-
-        return CreatedAtAction(nameof(GetPatientById), new { id = patient.Id }, response);
+        return CreatedAtAction(nameof(GetPatientById), new { id = patient.Id }, patient);
     }
 }
