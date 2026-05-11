@@ -56,6 +56,14 @@ public class PatientService : IPatientService
 
     public async Task<PatientResponse> CreatePatientAsync(CreatePatientRequest request)
     {
+        var mrnExists = await _context.Patients
+            .AnyAsync(p => p.MedicalRecordNumber == request.MedicalRecordNumber);
+
+        if (mrnExists)
+        {
+            throw new ArgumentException("A patient with this medical record number already exists.");
+        }
+        
         var patient = new Patient
         {
             MedicalRecordNumber = request.MedicalRecordNumber,

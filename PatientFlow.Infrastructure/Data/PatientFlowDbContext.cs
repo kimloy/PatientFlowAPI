@@ -17,27 +17,35 @@ public class PatientFlowDbContext : DbContext
 
     public DbSet<Observation> Observations { get; set; } = null!;
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Patient>()
+            .HasIndex(p => p.MedicalRecordNumber)
+            .IsUnique();
+    }
     public override async Task<int> SaveChangesAsync(
     CancellationToken cancellationToken = default)
-{
-    var entries = ChangeTracker
-        .Entries()
-        .Where(e => e.Entity is PatientFlow.Domain.Common.BaseEntity &&
-                    (e.State == EntityState.Added ||
-                     e.State == EntityState.Modified));
-
-    foreach (var entry in entries)
     {
-        var entity = (PatientFlow.Domain.Common.BaseEntity)entry.Entity;
+        var entries = ChangeTracker
+            .Entries()
+            .Where(e => e.Entity is PatientFlow.Domain.Common.BaseEntity &&
+                        (e.State == EntityState.Added ||
+                        e.State == EntityState.Modified));
 
-        if (entry.State == EntityState.Added)
+        foreach (var entry in entries)
         {
-            entity.CreatedAt = DateTime.UtcNow;
+            var entity = (PatientFlow.Domain.Common.BaseEntity)entry.Entity;
+
+            if (entry.State == EntityState.Added)
+            {
+                entity.CreatedAt = DateTime.UtcNow;
+            }
+
+            entity.UpdatedAt = DateTime.UtcNow;
         }
 
-        entity.UpdatedAt = DateTime.UtcNow;
+        return await base.SaveChangesAsync(cancellationToken);
     }
-
-    return await base.SaveChangesAsync(cancellationToken);
-}
 }
