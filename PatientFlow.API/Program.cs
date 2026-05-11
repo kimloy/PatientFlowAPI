@@ -17,6 +17,7 @@ builder.Services.AddDbContext<PatientFlowDbContext>(options =>
 
 builder.Services.AddScoped<IPatientService, PatientService>();
 builder.Services.AddScoped<IEncounterService, EncounterService>();
+builder.Services.AddScoped<IFhirPatientImportService, FhirPatientImportService>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
