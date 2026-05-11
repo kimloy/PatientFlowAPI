@@ -27,7 +27,6 @@ This project is designed to practice backend healthcare development concepts, in
 
 ## Architecture
 
-```text
 API Layer
   ↓
 Application Layer
