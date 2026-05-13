@@ -19,6 +19,7 @@ builder.Services.AddScoped<IPatientService, PatientService>();
 builder.Services.AddScoped<IEncounterService, EncounterService>();
 builder.Services.AddScoped<IFhirPatientImportService, FhirPatientImportService>();
 builder.Services.AddScoped<IObservationService, ObservationService>();
+builder.Services.AddScoped<IReportService, ReportService>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
